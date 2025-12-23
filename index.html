@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>多链靓钱包生成器（演示）</title>
+
+  <!-- 样式 -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- 加密库（浏览器 UMD 版本，关键） -->
+  <script src="https://cdn.jsdelivr.net/npm/bip39@3.0.4/dist/bip39.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bip32@2.0.6/dist/bip32.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-lib@6.1.0/dist/bitcoinjs-lib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>多链靓钱包地址生成器</h1>
+
+    <button id="generateBtn">生成钱包</button>
+
+    <div class="box">
+      <label>助记词</label>
+      <textarea id="mnemonic" readonly></textarea>
+
+      <label>BTC 地址</label>
+      <input id="btc" readonly />
+
+      <label>ETH 地址</label>
+      <input id="eth" readonly />
+
+      <label>TRON 地址（演示）</label>
+      <input id="tron" readonly />
+    </div>
+  </div>
+
+  <!-- 你的逻辑代码一定要最后加载 -->
+  <script src="app.js"></script>
+</body>
+</html>
